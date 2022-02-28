@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Secular+One&display=swap');
+
+
+body {
+background: linear-gradient(269.84deg, #0C164D 0.11%, #190B22 99.83%);
+color: #FFFFFF;
+display: flex;
+margin: 0;
+height: 80vh;
+width: 95vw;
+}
+
+.secular {
+    font-family: Secular One;
+}
+.lora {
+    font-family: Lora;
+}
+
+.title {
+position: absolute;
+left: 70%;
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+height: 100px;
+}
+
+.title .secular { 
+font-size: 60px;
+letter-spacing: 0.09em;
+}
+
+.title .lora {
+font-size: 24px;
+letter-spacing: 0.6em;
+color: #FFD029;
+}
+
+.sun {
+position: absolute;
+width: 1100px;
+height: 1100px;
+margin-top: 100px;
+background: #FFD029;
+transform: translateX(-140%);
+}
+
+.planets {
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: space-around;
+margin-left: 20%;
+margin-top: 10%;
+}
+
+.round {
+border-radius: 8928329px;
+}
+
+.mercury {
+width: 14px;
+height: 14px;
+background-color: #888888;
+margin-left: 30px;
+}
+
+
+.venus {
+width: 26px;
+height: 26px;
+background-color:#E7CDCD;
+}
+
+.earth {
+    width: 28px;
+height: 28px;
+background: #428ED5;
+}
+
+.mars {
+width: 14px;
+height: 14px;
+background: #EF5F5F;
+}
+
+.jupiter {
+width: 188px;
+height: 188px;
+background: #E29468;
+}
+
+.saturn {
+width: 144px;
+height: 144px;
+background: #C7AA72;
+}
+.uranus {
+width: 66px;
+height: 66px;
+background: #C9D4F1;
+}
+.neptune {
+width: 66px;
+height: 66px;
+background: #7A91A7;
+}
+
+.overlay {
+    position: absolute;
+    background: linear-gradient(269.84deg, #0C164D 0.11%, #190B22 99.83%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+.hidden {
+    display: none;
+}
+
+.planetpreview {
+    position: absolute;
+    width: 1100px;
+    height: 1100px;
+    margin-top: 100px;
+    background: #FFD029;
+    transform: translateX(-90%);
+    }
+
+.planetinfo {
+    width:1100px;
+    height: 1100px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+
+}
