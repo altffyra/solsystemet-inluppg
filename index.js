@@ -1,5 +1,5 @@
-const planetElements = document.getElementById('planetElem')
 import {getAPIKey} from "./modules/getkey.js";
+const planetElements = document.getElementById('planetElem')
 const overlayElem = document.querySelector('.overlay');
 const backBtn = document.querySelector('.planetpreview')
 const planetNameElem = document.querySelector('.planetname');
@@ -21,15 +21,16 @@ function divideData(allPlanets){
             planetNameElem.innerHTML= allPlanets[i].name;
             planetNameLatinElem.innerHTML= allPlanets[i].latinName;
             planetDescriptionElem.innerHTML=allPlanets[i].desc;
-            circumferenceElem.innerHTML=allPlanets[i].circumference+" km";
-            distanceElem.innerHTML=allPlanets[i].distance+" km";
+            let modifiednumberCurcimference = allPlanets[i].circumference.toLocaleString() ;
+            circumferenceElem.innerHTML=modifiednumberCurcimference+" km";
+            let modifiednumberDistance =allPlanets[i].distance.toLocaleString();
+            distanceElem.innerHTML=modifiednumberDistance+" km";
             maxtempElem.innerHTML=allPlanets[i].temp.day+" C";
             mintempElem.innerHTML=allPlanets[i].temp.night+" C"
             moonElem.innerHTML= allPlanets[i].moons;
             overlayElem.classList.remove('hidden');
             let bgcolor = window.getComputedStyle(planetElements.children[i]).backgroundColor;
             backBtn.style.backgroundColor = bgcolor;
-            
         })
 }
 }
