@@ -205,6 +205,7 @@ background: rgba(66, 142, 213, 0.06);
     flex-direction: column;
     position: absolute;
     left:40%;
+    top:40px;
     max-width: 640px;
     word-wrap: break-word;
     
