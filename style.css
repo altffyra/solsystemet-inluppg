@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Secular+One&display=swap');
 *{
     box-sizing: border-box;
+    position: relative;
 }
 
 body {
@@ -11,7 +12,7 @@ margin: 0;
 height: 100vh;
 width: 100vw;
 overflow: hidden;
-position: relative;
+
 }
 
 .secular {
@@ -22,6 +23,13 @@ position: relative;
 }
 .large {
     font-size: 60px;
+}
+
+.tawny {
+    font-family: Roboto Condensed;
+    font-weight: 300;
+    letter-spacing: 0.16em;
+    align-self: stretch;
 }
 
 .title {
@@ -55,20 +63,19 @@ color: #FFD029;
 position: absolute;
 background: #FFD029;
 filter: blur(1px);
-width: 1340px;
-height: 1340px;
-left: -1170px;
-top: -10vw;
+width: 1100px;
+height: 1100px;
+right:110%;
 }
 
 
 .planets {
 margin-left: 30vh;
-margin-top: 100px;
 width: 80%;
 display: flex;
 align-items: center;
 justify-content: space-around;
+
 
 
 }
@@ -156,7 +163,7 @@ background: #7A91A7;
 
 }
 
-.hiddens {
+.hidden {
     display: none;
 }
 
@@ -165,8 +172,9 @@ background: #7A91A7;
     width: 1100px;
     height: 1100px;
     background: #428ED5;
-    transform: translateX(-90%) translateY(-120px);
+    transform: translateX(-90%) translateY(-110px);
     filter: blur(1px);
+    z-index: 1;
 }
 
 
@@ -191,12 +199,14 @@ background: rgba(66, 142, 213, 0.06);
 }
 
 .planetinfo {
-    width:1100px;
+    width:900px;
     height: 1100px;
     display: flex;
     flex-direction: column;
     position: absolute;
     left:40%;
+    max-width: 640px;
+    word-wrap: break-word;
     
 }
 .planetnamelatin {
@@ -207,10 +217,19 @@ background: rgba(66, 142, 213, 0.06);
     font-weight: 400;
 
 }
+
+.planetdescription {
+    width:640px;
+    font-family: Roboto Condensed;
+    line-height: 170%;
+    font-weight: 300;
+}
+
 .bold-description {
     font-size: 18px;
     letter-spacing: 0.09em;
     font-family: Secular One;
+    
 
 }
 
@@ -248,25 +267,30 @@ background: rgba(66, 142, 213, 0.06);
 
 .planetspecifics-5 {
     padding: 20px 50px 30px 0px;
-    width: 300px;
 }
+
+.moon {
+    max-width: 50vw;
+}
+
 .logo {
     position: absolute;
-    top:80%;
+    top:90%;
     left:50%;
 }
 @media screen and (min-width:2000px) {
-    .sun{
-        margin-top: 250px;
+    .sun {
+        right:113%;
     }
     .planetpreview{
         transform: translateX(-90%) translateY(0px);
+        top:80px
     }
     .planetpreview-second{
-    top: -122px;
+    top: -32px;
     }
     .planetpreview-third{
-        top: -142px;
+        top: -52px;
     }
 
 }

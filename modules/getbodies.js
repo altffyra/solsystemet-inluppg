@@ -7,8 +7,8 @@ let response = await fetch('https://fathomless-shelf-54969.herokuapp.com/bodies'
     {method: 'GET',
     headers: {'x-zocom': APIKEY }
 })
-let allPlanets = await response.json();
-console.log(allPlanets);
+let data = await response.json();
+let allPlanets = data.bodies;
 divideData(allPlanets);
 }
 
