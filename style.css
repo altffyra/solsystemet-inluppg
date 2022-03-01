@@ -146,8 +146,8 @@ background: #7A91A7;
     display: flex;
     flex-direction: row;
     background-image:
-    radial-gradient(white, rgba(255,255,255,0) 8px),
-    radial-gradient(rgba(255,255,255,1), rgb(0, 0, 0) 2px 30px),
+    radial-gradient(white, rgba(255,255,255,0) 4px),
+    radial-gradient(rgba(255,255,255,1), #08103f 2px 30px),
     radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
     radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px);
     background-size: 740px 550px, 350px 350px, 250px 250px, 150px 150px;
@@ -156,7 +156,7 @@ background: #7A91A7;
 
 }
 
-.hidden {
+.hiddens {
     display: none;
 }
 
@@ -171,7 +171,7 @@ background: #7A91A7;
 
 
 .planetpreview-second {
-    position: absolute;
+position: absolute;
 width: 1340px;
 height: 1340px;
 left: -1170px;
@@ -208,9 +208,9 @@ background: rgba(66, 142, 213, 0.06);
 
 }
 .bold-description {
-    font-weight: 400;
     font-size: 18px;
     letter-spacing: 0.09em;
+    font-family: Secular One;
 
 }
 
@@ -224,17 +224,17 @@ background: rgba(66, 142, 213, 0.06);
     width: 800px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     
 }
 
 .planetspecifics-1 {
-    padding: 20px 50px 0px 0px;
+    padding: 10px 50px 0px 0px;
     width: 400px;
 }
 
 .planetspecifics-2 {
-    padding: 20px 50px 0px 0px;
+    padding: 10px 50px 0px 0px;
     width: 300px;
 }
 .planetspecifics-3 {
@@ -242,7 +242,7 @@ background: rgba(66, 142, 213, 0.06);
     width: 400px;
 }
 .planetspecifics-4 {
-    padding: 20px 50px 30px 0px;
+    padding: 20px 50px 20px 0px;
     width: 300px;
 }
 
