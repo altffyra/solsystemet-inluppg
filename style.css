@@ -1,297 +1,276 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Secular+One&display=swap');
-*{
-    box-sizing: border-box;
-    position: relative;
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Secular+One&display=swap");
+* {
+  box-sizing: border-box;
+  position: relative;
 }
 
 body {
-background: linear-gradient(269.84deg, #0C164D 0.11%, #190B22 99.83%);
-color: #FFFFFF;
-display: flex;
-margin: 0;
-height: 100vh;
-width: 100vw;
-overflow: hidden;
-
+  background: linear-gradient(269.84deg, #0c164d 0.11%, #190b22 99.83%);
+  color: #ffffff;
+  display: flex;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
 }
 
 .secular {
-    font-family: Secular One;
+  font-family: Secular One;
 }
 .lora {
-    font-family: Lora;
+  font-family: Lora;
 }
 .large {
-    font-size: 60px;
+  font-size: 60px;
 }
 
 .tawny {
-    font-family: Roboto Condensed;
-    font-weight: 300;
-    letter-spacing: 0.16em;
-    align-self: stretch;
+  font-family: Roboto Condensed;
+  font-weight: 300;
+  letter-spacing: 0.16em;
+  align-self: stretch;
 }
 
 .title {
-position: absolute;
-left: 70%;
-display: flex;
-flex-direction: column;
-align-items: flex-end;
-height: 100px;
+  position: absolute;
+  left: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  height: 100px;
 }
 
-.title h1{
-    margin-bottom: 0px;
+.title h1 {
+  margin-bottom: 0px;
 }
-.title h2{
-    margin-top: 0px;
+.title h2 {
+  margin-top: 0px;
 }
 
-.title .secular { 
-font-size: 60px;
-letter-spacing: 0.09em;
+.title .secular {
+  font-size: 60px;
+  letter-spacing: 0.09em;
 }
 
 .title .lora {
-font-size: 24px;
-letter-spacing: 0.6em;
-color: #FFD029;
+  font-size: 24px;
+  letter-spacing: 0.6em;
+  color: #ffd029;
 }
 
 .sun {
-position: absolute;
-background: #FFD029;
-filter: blur(1px);
-width: 1100px;
-height: 1100px;
-right:110%;
+  position: absolute;
+  background: #ffd029;
+  filter: blur(1px);
+  width: 1100px;
+  height: 1100px;
+  right: 110%;
 }
-
 
 .planets {
-margin-left: 30vh;
-width: 80%;
-display: flex;
-align-items: center;
-justify-content: space-around;
-
-
-
+  margin-left: 30vh;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
-
 
 .round {
-border-radius: 8928329px;
+  border-radius: 8928329px;
 }
 .round:hover {
-    opacity: 50%;
+  opacity: 50%;
 }
 
 .mercury {
-width: 14px;
-height: 14px;
-background-color: #888888;
-margin-left: 30px;
+  width: 14px;
+  height: 14px;
+  background-color: #888888;
+  margin-left: 30px;
 }
 
-
 .venus {
-width: 26px;
-height: 26px;
-background-color:#E7CDCD;
+  width: 26px;
+  height: 26px;
+  background-color: #e7cdcd;
 }
 
 .earth {
-    width: 28px;
-height: 28px;
-background: #428ED5;
+  width: 28px;
+  height: 28px;
+  background: #428ed5;
 }
 
 .mars {
-width: 14px;
-height: 14px;
-background: #EF5F5F;
+  width: 14px;
+  height: 14px;
+  background: #ef5f5f;
 }
 
 .jupiter {
-width: 188px;
-height: 188px;
-background: #E29468;
-
+  width: 188px;
+  height: 188px;
+  background: #e29468;
 }
 
-
 .saturn {
-width: 144px;
-height: 144px;
-background: #C7AA72;
-position: relative;
-display: flex;
+  width: 144px;
+  height: 144px;
+  background: #c7aa72;
+  position: relative;
+  display: flex;
 }
 
 .saturn svg {
-    zoom:120%;
+  zoom: 120%;
 }
 
 .uranus {
-width: 66px;
-height: 66px;
-background: #C9D4F1;
+  width: 66px;
+  height: 66px;
+  background: #c9d4f1;
 }
 .neptune {
-width: 66px;
-height: 66px;
-background: #7A91A7;
+  width: 66px;
+  height: 66px;
+  background: #7a91a7;
 }
 
 .overlay {
-    position: absolute;
-    background: linear-gradient(269.84deg, #0C164D 0.11%, #190B22 99.83%);
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    background-image:
-    radial-gradient(white, rgba(255,255,255,0) 4px),
-    radial-gradient(rgba(255,255,255,1), #08103f 2px 30px),
-    radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
-    radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px);
-    background-size: 740px 550px, 350px 350px, 250px 250px, 150px 150px;
-
-
-
+  position: absolute;
+  background: linear-gradient(269.84deg, #0c164d 0.11%, #190b22 99.83%);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  background-image: radial-gradient(white, rgba(255, 255, 255, 0) 4px),
+    radial-gradient(rgba(255, 255, 255, 1), #08103f 2px 30px),
+    radial-gradient(white, rgba(255, 255, 255, 0.15) 1px, transparent 30px),
+    radial-gradient(white, rgba(255, 255, 255, 0.1) 2px, transparent 40px);
+  background-size: 740px 550px, 350px 350px, 250px 250px, 150px 150px;
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
 
 .planetpreview {
-    position: absolute;
-    width: 1100px;
-    height: 1100px;
-    background: #428ED5;
-    transform: translateX(-90%) translateY(-110px);
-    filter: blur(1px);
-    z-index: 1;
+  position: absolute;
+  width: 1100px;
+  height: 1100px;
+  background: #428ed5;
+  transform: translateX(-90%) translateY(-110px);
+  filter: blur(1px);
+  z-index: 1;
 }
-
 
 .planetpreview-second {
-position: absolute;
-width: 1340px;
-height: 1340px;
-left: -1170px;
-top: -222px;
+  position: absolute;
+  width: 1340px;
+  height: 1340px;
+  left: -1170px;
+  top: -222px;
 
-background: rgba(66, 142, 213, 0.1);
+  background: rgba(66, 142, 213, 0.1);
 }
 .planetpreview-third {
-position: absolute;
-width: 1404px;
-height: 1404px;
-left: -1184px;
-top: -254px;
+  position: absolute;
+  width: 1404px;
+  height: 1404px;
+  left: -1184px;
+  top: -254px;
 
-background: rgba(66, 142, 213, 0.06);
-
+  background: rgba(66, 142, 213, 0.06);
 }
 
 .planetinfo {
-    width:900px;
-    height: 1100px;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    left:40%;
-    top:40px;
-    max-width: 640px;
-    word-wrap: break-word;
-    
+  width: 900px;
+  height: 1100px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 40%;
+  top: 40px;
+  max-width: 640px;
+  word-wrap: break-word;
 }
 .planetnamelatin {
-    margin: 0;
-    font-size: 24px;
-    letter-spacing: 0.6em;
-    color: #FFD029;
-    font-weight: 400;
-
+  margin: 0;
+  font-size: 24px;
+  letter-spacing: 0.6em;
+  color: #ffd029;
+  font-weight: 400;
 }
 
 .planetdescription {
-    width:640px;
-    font-family: Roboto Condensed;
-    line-height: 170%;
-    font-weight: 300;
+  width: 640px;
+  font-family: Roboto Condensed;
+  line-height: 170%;
+  font-weight: 300;
 }
 
 .bold-description {
-    font-size: 18px;
-    letter-spacing: 0.09em;
-    font-family: Secular One;
-    
-
+  font-size: 18px;
+  letter-spacing: 0.09em;
+  font-family: Secular One;
 }
 
 .planetname {
-    height:40px;
-    font-weight: 400;
-    letter-spacing: 0.09em;
+  height: 40px;
+  font-weight: 400;
+  letter-spacing: 0.09em;
 }
 
 .planet-specifics-wrapper {
-    width: 800px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    
+  width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
 .planetspecifics-1 {
-    padding: 10px 50px 0px 0px;
-    width: 400px;
+  padding: 10px 50px 0px 0px;
+  width: 400px;
 }
 
 .planetspecifics-2 {
-    padding: 10px 50px 0px 0px;
-    width: 300px;
+  padding: 10px 50px 0px 0px;
+  width: 300px;
 }
 .planetspecifics-3 {
-    padding: 20px 50px 0px 0px;
-    width: 400px;
+  padding: 20px 50px 0px 0px;
+  width: 400px;
 }
 .planetspecifics-4 {
-    padding: 20px 50px 20px 0px;
-    width: 300px;
+  padding: 20px 50px 20px 0px;
+  width: 300px;
 }
 
 .planetspecifics-5 {
-    padding: 20px 50px 30px 0px;
+  padding: 20px 50px 30px 0px;
 }
 
 .moon {
-    max-width: 50vw;
+  max-width: 50vw;
 }
 
 .logo {
-    position: absolute;
-    top:90%;
-    left:50%;
+  position: absolute;
+  top: 90%;
+  left: 50%;
 }
-@media screen and (min-width:2000px) {
-    .sun {
-        right:113%;
-    }
-    .planetpreview{
-        transform: translateX(-90%) translateY(0px);
-        top:80px
-    }
-    .planetpreview-second{
+@media screen and (min-width: 2000px) {
+  .sun {
+    right: 113%;
+  }
+  .planetpreview {
+    transform: translateX(-90%) translateY(0px);
+    top: 80px;
+  }
+  .planetpreview-second {
     top: -32px;
-    }
-    .planetpreview-third{
-        top: -52px;
-    }
-
+  }
+  .planetpreview-third {
+    top: -52px;
+  }
 }
